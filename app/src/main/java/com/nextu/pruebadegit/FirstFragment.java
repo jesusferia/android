@@ -13,6 +13,7 @@ public class FirstFragment extends Fragment {
 
     @Override
     public View onCreateView(
+            //comentario de fragmento
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
@@ -22,7 +23,7 @@ public class FirstFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+//se agregagan mas comentarios
         view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,5 +31,10 @@ public class FirstFragment extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
+    }
+
+    public void onclick(View view){
+        int a=0;
+        int b=a+5;
     }
 }
